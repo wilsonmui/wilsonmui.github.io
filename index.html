@@ -1,0 +1,79 @@
+<!--
+Resources used:
+https://startbootstrap.com/templates/simple-sidebar/
+https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp
+https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
+https://medium.com/@jonas_duri/enable-dark-mode-with-css-variables-and-javascript-today-66cedd3d7845
+https://www.codeply.com/go/1ZFF5CEXM5/custom-navbar-color
+-->
+
+<html>
+
+<head>
+    <title>Quakey</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fresca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-fixed-top navbar-light smol_height">
+        <a class="navbar-brand mb-0 h1" href="index.html">Quakey</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">maps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="manual.html">guide</a>
+                </li>
+            </ul>
+            <div id="zipcode_form" class="form-inline my-2 my-lg-0 mb-0">
+                <input id="zipcode_entry" class="form-control mr-sm-2" type="search" onkeydown="search()" placeholder="city name or zipcode"
+                       aria-label="Search">
+                <button id="zipcode_entry_button" type="button" class="btn btn-outline-secondary" onclick="searchZip()">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Map -->
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <nav class="navbar navbar-custom navbar-expand-lg smol_height my-0 pl-0">
+        <a class="nav-link " href="manual.html">manual</a>
+        <form class="form-inline ml-auto my-0 my-0">
+            <div class="form-group my-0 pl-0">
+                <label class="mr-2 my-0 pl-0">night mode</label>
+                <label class="switch ">
+                    <input type="checkbox" id="night_toggle" onclick="toggle_action()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </form>
+    </nav>
+</div>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATWzezw7NFjHzNOXFEPhNx_WmYuTvGK7o&callback=initMap"></script>
+</body>
+
+</html>

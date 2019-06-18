@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Manual</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <script src="manual.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Fresca&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body onload="hideTabsandExecute(showView)">
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">
+      <a href="index.html">Quakey</a>
+      </div>
+      <div class="list-group list-group-flush">
+        <a href="#" onclick="hideTabsandExecute(showView)" class="list-group-item is-visible">View</a>
+        <a href="#" onclick="hideTabsandExecute(showSearch)" class="list-group-item list-group-item-action bg-light">Search</a>
+        <a href="#" onclick="hideTabsandExecute(showRequest)" class="list-group-item list-group-item-action bg-light">Request</a>
+        <a href="#" onclick="hideTabsandExecute(showNightMode)" class="list-group-item list-group-item-action bg-light">Night Mode</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+
+        <button id="menu-toggle"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon mt-2"></span>
+        </button>
+
+      </nav>
+
+      <div id="view" class="container content">
+        <img src="images/viewing.png" class="img-fluid">
+        <br>
+
+        The map visualizes the magnitude of past earthquakes. By default, the map is centered in California.
+
+        The more recent earthquakes will be more transparent. Hue and scale of the circles indicate the magnitude of the
+        earthquake in that general location.
+
+        The search bar allows users to view specific locations. Searching can be performed with zipcode or city/state.
+        After submitting a location, the map will pan and zoom over to it.
+
+      </div>
+
+      <div id="info" class="container content">
+        <img src="images/info.png" class="img-fluid">
+        <br>
+
+        This page will show general earthquake information about some major counties in California. It is intended to
+        be informative. Visitors can view historical trends and data pertaining to earthquake activities for the given
+        counties.
+
+      </div>
+
+      <div id="dark" class="container content">
+        <img src="images/dark.png" class="img-fluid">
+        <br>
+
+        Night mode is a feature that serves to reduce eye strain. It is better suited for use in dimly-lit settings.
+        This feature should also preserve battery usage on mobile devices. The main pages will have a toggle switch on
+        the bottom right of the page to use this feature.
+
+      </div>
+
+      <div id="request" class="container content">
+        <img src="images/request.png" class="img-fluid">
+        <br>
+
+        If there is additional information, feel free to request it through this form. Simply fill out the form and
+        submit it.
+
+      </div>
+
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>

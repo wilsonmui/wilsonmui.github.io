@@ -1,0 +1,145 @@
+/* #map {
+    height: 100%;
+}
+
+ 
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+} */
+
+:root {
+    --background-color: '#fff';
+    --page-width: '70em';
+    --primary-color: '#151513';
+    --font-color: '#151513';
+    --subtle-primary-color: '#151513';
+    --block-background-color: '#D0D2D3';
+    --menu-item-color: '#000';
+    --menu-item-hover-color: '#000';
+    --menu-item-alert-bg: '#ffffff';
+    --menu-item-alert-shadow: '#dfe1e7';
+    --alert-border-color: '#dfe1e7';
+    --tertiary-color: '#727680';
+    --search-bar-color: '#fff';
+}
+
+html, body, h1 {
+    font-family: 'Fresca', sans-serif;
+    color: var(--font-color);
+    background-color: var(--background-color);
+
+}
+
+.smol_height {
+    height: 8%;
+}
+
+#map {
+    height: 92%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.light_font {
+    color: #727272;
+}
+
+.navbar-custom {
+    background-color: var(--block-background-color);
+}
+.navbar-custom .navbar-nav .nav-link,
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand,
+.navbar-custom .form-inline .btn,
+.navbar-custom .form-inline{
+    color: var(--font-color);
+    background-color: var(--block-background-color);
+
+}
+
+.navbar-custom .form-inline .form-control{
+    color: var(--font-color);
+    background-color: var(--search-bar-color);
+}
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link{
+    color: var(--menu-item-hover-color);
+}
+
+.navbar-fixed-top {
+    z-index: 10000;
+}
+/*
+checkbox:
+https://www.w3schools.com/howto/howto_css_switch.asp
+ */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 17px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
