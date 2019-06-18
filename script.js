@@ -363,15 +363,6 @@ var night_style = [
     }
 ];
 
-if (localStorage.getItem('night') === null) {
-    localStorage.night = false;
-    activateLightMode();
-}
-else if (localStorage.getItem('night') === true) {
-    activateDarkMode();
-    console.log("night mode on");
-    document.querySelector('#night_toggle').checked = true;
-}
 
 function initMap() {
 
@@ -380,7 +371,7 @@ function initMap() {
         zoom: 7,
         styles: standard_style
     });
-    //activateLightMode();
+    activateLightMode();
 
     map.data.setStyle(styleFeature);
     // Get the earthquake data (JSONP format)
@@ -505,7 +496,6 @@ function activateDarkMode() {
     for(k in darkTheme) {
         rootElement.style.setProperty(k, darkTheme[k])
     }
-    localStorage.setItem('night', 'true');
 }
 
 function activateLightMode() {
@@ -530,5 +520,4 @@ function activateLightMode() {
     for(k in lightTheme) {
         rootElement.style.setProperty(k, lightTheme[k])
     }
-    localStorage.setItem('night', 'false');
 }
