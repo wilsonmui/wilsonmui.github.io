@@ -54,7 +54,7 @@ class ViewSDKClient {
                 /* file name */
                 fileName: this.url,
                 /* file ID */
-                id: "6d07d124-ac85-43b3-a867-36930f502ac6",
+                id: this.url,
             }
         }, viewerConfig);
 
