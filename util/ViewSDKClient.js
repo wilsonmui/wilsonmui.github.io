@@ -1,6 +1,7 @@
 
 class ViewSDKClient {
-    constructor() {
+    constructor(url) {
+        this.url = url
         this.readyPromise = new Promise((resolve) => {
             if (window.AdobeDC) {
                 resolve();
@@ -36,7 +37,7 @@ class ViewSDKClient {
             content: {
                 /* Location of file where it is hosted */
                 location: {
-                    url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf",
+                    url: this.url,
                     /*
                     If the file URL requires some additional headers, then it can be passed as follows:-
                     headers: [

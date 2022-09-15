@@ -1,26 +1,32 @@
-import React, {Component, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import ViewSDKClient from '../util/ViewSDKClient';
 import styles from '../styles/PDFDisplay.module.css'
 
 export const PDFDisplay = (props) => {
 
     useEffect(() => {
-        const viewSDKClient = new ViewSDKClient();
+        console.log("initialized")
+        const viewSDKClient = new ViewSDKClient(props.url);
         viewSDKClient.ready().then(() => {
             /* Invoke file preview */
             viewSDKClient.previewFile("pdf-div", {
                 /* Pass the embed mode option here */
-                embedMode: "SIZED_CONTAINER"
+                embedMode: "IN_LINE"
             });
         });
     })
 
     return (
-        <div id="pdf-div" className={styles.container_div}/>
+        <>
+            <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+
+            <div id="pdf-div" className={styles.container_div}/>
+
+        </>
     )
 
 }
 
 
 
-export default PDFDisplay;
+//export default PDFDisplay;

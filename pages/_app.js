@@ -18,10 +18,10 @@ function MyApp({ Component, pageProps }) {
 
 
     return (
-        <ChakraProvider theme={theme} className='min-h-screen'>
+        <ChakraProvider theme={theme} className='flex flex-col min-h-screen'>
             <Navbar/>
             <Component {...pageProps} />
-            <footer  className='border-t-[1px] border-black p-10  inset-x-0 bottom-0'>
+            <footer  className='border-t-[1px] border-black p-10  '>
                 <Text className="flex items-center justify-center">Site built with Next.js / React, Tailwind CSS, and Chakra</Text>
                 <div className="flex items-center justify-center mt-4">
                     <Image src="/logo_main.svg" alt="cat_logo" width={72} height={16} />
