@@ -20,7 +20,6 @@ export const PDFDisplay = (props) => {
 
     return (
         <>
-            <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 
             <div id="pdf-div" className='max-w-[800px] mb-20'/>
 
