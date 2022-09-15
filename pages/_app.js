@@ -2,6 +2,8 @@ import '../styles/globals.css'
 import {Navbar} from "../components/Navbar";
 import Image from "next/image";
 import {ChakraProvider, extendTheme, Text} from '@chakra-ui/react'
+import React from "react";
+import Script from "next/script";
 
 
 function MyApp({ Component, pageProps }) {
@@ -20,6 +22,9 @@ function MyApp({ Component, pageProps }) {
     return (
         <ChakraProvider theme={theme} className='flex flex-col min-h-screen'>
             <Navbar/>
+            <Script
+                src="https://documentcloud.adobe.com/view-sdk/main.js"
+                strategy="beforeInteractive"></Script>
             <Component {...pageProps} />
             <footer  className='border-t-[1px] border-black p-10  '>
                 <Text className="flex items-center justify-center">Site built with Next.js / React, Tailwind CSS, and Chakra</Text>

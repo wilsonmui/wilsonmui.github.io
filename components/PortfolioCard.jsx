@@ -15,7 +15,7 @@ export const PortfolioCard = (props) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
-      <div className=' relative border-[1px] border-black h-[500px] lg:w-[500px] mb-8 '>
+      <div className=' relative border-[1px] border-black h-[500px] lg:w-[450px] mb-8 '>
           <Image className='h-3/5 w-full object-cover' src={props.image}></Image>
           <Text className='m-2' fontSize='lg'>{props.name}</Text>
           <Text className='ml-2'fontSize='sm'>{props.desc}</Text>
