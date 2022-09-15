@@ -12,7 +12,6 @@ export default function Home() {
             <Head>
                 <title>Wilson Mui - Portfolio</title>
                 <meta name="description" content="Wilson's portfolio" />
-                <link rel="icon" href="/logo_main.svg" />
             </Head>
 
             <div className='place-items-center items-center grid grid-cols-1 lg:grid-cols-2 place-content-center'>
