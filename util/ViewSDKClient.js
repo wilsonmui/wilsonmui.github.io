@@ -52,7 +52,7 @@ class ViewSDKClient {
             /* Pass meta data of file */
             metaData: {
                 /* file name */
-                fileName: "Bodea Brochure.pdf",
+                fileName: this.url,
                 /* file ID */
                 id: "6d07d124-ac85-43b3-a867-36930f502ac6",
             }
@@ -65,7 +65,7 @@ class ViewSDKClient {
         /* Initialize the AdobeDC View object */
         this.adobeDCView = new window.AdobeDC.View({
             /* Pass your registered client id */
-            clientId: "8c0cd670273d451cbc9b351b11d22318",
+            clientId: "3f76033cc0204d1fab537202ca05f442",
             /* Pass the div id in which PDF should be rendered */
             divId,
         });

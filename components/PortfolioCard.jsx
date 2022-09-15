@@ -36,7 +36,6 @@ export const PortfolioCard = (props) => {
                       <div className='grid grid-cols-1 place-items-center'>
 
                           <PDFDisplay url={props.url}/>
-                          <Text>example</Text>
 
 
                       </div>
