@@ -30,16 +30,15 @@ export const PortfolioCard = (props) => {
               <ModalContent className=''>
                   <ModalHeader>{props.name}</ModalHeader>
                   <ModalCloseButton />
-                  <div>
+                  <PDFDisplay url={props.url}/>
+                  <div className='grid grid-cols-1 place-items-center'>
+
                       <PDFDisplay url={props.url}/>
-                      <div className='grid grid-cols-1 place-items-center'>
+                      <Text>example</Text>
 
-                          <PDFDisplay url={props.url}/>
-
-
-                      </div>
 
                   </div>
+
                   <ModalBody>
 
                   </ModalBody>
