@@ -1,14 +1,15 @@
 import {PDFDisplay} from "../components/PDFDisplay";
+import {Heading} from "@chakra-ui/react";
 
 export default function Resume() {
 
     return (
 
 
-        <div className='flex items-center justify-center'>
+        <div className='grid grid-cols-1 place-items-center'>
 
-            <h1>Resume</h1>
-            <PDFDisplay url='https://wilsonmui.github.io/resume.pdf'/>
+            <Heading className='m-14 inline-block '>Resume</Heading>
+            <PDFDisplay url='https://wilsonmui.github.io/pdf/resume.pdf'/>
 
         </div>
 

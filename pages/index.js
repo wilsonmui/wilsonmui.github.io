@@ -5,6 +5,8 @@ import {Heading, Text} from "@chakra-ui/react";
 import {PortfolioCard} from "../components/PortfolioCard";
 
 export default function Home() {
+    let urlPrefix = 'https://wilsonmui.github.io/pdf/'
+
     return (
         <div className={styles.container}>
             <Head>
@@ -33,7 +35,7 @@ export default function Home() {
                 Design + Research
             </Text>
             <div className='m-8 place-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4' >
-                <PortfolioCard image='/card-images/chatbot.png' name="Emotional Contagion from Chatbots" desc="Can a chatbot's exhibited feelings influence a human's emotions? Turns out it can."/>
+                <PortfolioCard url={urlPrefix + 'resume.pdf'} image='/card-images/chatbot.png' name="Emotional Contagion from Chatbots" desc="Can a chatbot's exhibited feelings influence a human's emotions? Turns out it can."/>
             </div>
 
 
