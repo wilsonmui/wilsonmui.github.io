@@ -15,13 +15,13 @@ export const PortfolioCard = (props) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
-      <div className='border-[1px] border-black h-96 w-96'>
+      <div className=' relative border-[1px] border-black h-[500px] w-[500px] mb-8 md:max-w-[100%]'>
           <Image className='h-3/5 w-full object-cover' src={props.image}></Image>
           <Text className='m-2' fontSize='lg'>{props.name}</Text>
           <Text className='ml-2'fontSize='sm'>{props.desc}</Text>
           <button
               onClick={onOpen}
-              className="m-2 bg-transparent font-semibold hover:text-white py-2 px-4 border border-black rounded">
+              className="ml-2 mt-8 mb-4 absolute bottom-0 bg-transparent font-semibold hover:text-white py-2 px-4 border border-black rounded">
               View Project
           </button>
 
@@ -34,7 +34,6 @@ export const PortfolioCard = (props) => {
                       <PDFDisplay url={props.url}/>
                       <div className='grid grid-cols-1 place-items-center'>
 
-                          <PDFDisplay url='https://wilsonmui.github.io/pdf/resume.pdf'/>
                           <PDFDisplay url={props.url}/>
 
 
