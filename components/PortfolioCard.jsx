@@ -15,7 +15,7 @@ export const PortfolioCard = (props) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
 
     return (
-      <div className=' relative border-[1px] border-black h-[500px] w-[500px] mb-8 md:max-w-[100%]'>
+      <div className=' relative border-[1px] border-black h-[500px] lg:w-[500px] mb-8 '>
           <Image className='h-3/5 w-full object-cover' src={props.image}></Image>
           <Text className='m-2' fontSize='lg'>{props.name}</Text>
           <Text className='ml-2'fontSize='sm'>{props.desc}</Text>
@@ -30,17 +30,16 @@ export const PortfolioCard = (props) => {
               <ModalContent className=''>
                   <ModalHeader>{props.name}</ModalHeader>
                   <ModalCloseButton />
-                  <PDFDisplay url={props.url}/>
-                  <div className='grid grid-cols-1 place-items-center'>
 
-                      <PDFDisplay url={props.url}/>
-                      <Text>example</Text>
-
-
-                  </div>
 
                   <ModalBody>
+                      <div className='grid grid-cols-1 place-items-center'>
 
+                          <PDFDisplay url={props.url}/>
+                          <Text>example</Text>
+
+
+                      </div>
                   </ModalBody>
 
                   <ModalFooter>
