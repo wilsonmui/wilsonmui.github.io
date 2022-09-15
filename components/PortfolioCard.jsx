@@ -29,7 +29,7 @@ export const PortfolioCard = (props) => {
               <ModalOverlay />
               <ModalContent className=''>
                   <ModalHeader>{props.name}</ModalHeader>
-                  <ModalCloseButton />
+                  <ModalCloseButton size='lg'/>
 
 
                   <ModalBody>
