@@ -22,10 +22,10 @@ export default function Home() {
                     </Text>
                     <Text fontSize='3xl' className='mb-8'>In my free time, you’ll find me roasting coffee and brushing my cats :)</Text>
 
-                    <div className='inline-block'>
-                        <a className=" bg-transparent font-semibold hover:text-white py-2 px-4 border border-black rounded"
-                           href='https://github.com/wilsonmui/wilsonmui.github.io'>See this portfolio's code on Github</a>
-                        <a className=" ml-6 bg-transparent font-semibold hover:text-white py-2 px-4 border border-black rounded"
+                    <div className='grid grid-cols-1 lg:grid-cols-2'>
+                        <a className=" text-center my-4 lg:mr-6 bg-transparent font-semibold hover:text-white py-2 px-4 border border-black rounded"
+                           href='https://github.com/wilsonmui/wilsonmui.github.io'>See portfolio in Github</a>
+                        <a className=" text-center my-4 bg-transparent font-semibold hover:text-white py-2 px-4 border border-black rounded"
                            href='/resume'>Resume</a>
                     </div>
 
