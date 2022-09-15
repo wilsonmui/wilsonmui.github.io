@@ -19,7 +19,7 @@ export default function Home() {
                 <img src="/cat_drawing.png" alt="Really cool cat in barista apron" className='max-w-[95%] lg:-mr-10' style={{padding: 50}}/>
                 <div className='max-w-prose lg:justify-self-start '>
                     <Text fontSize='5xl'>Hi, I'm Wilson</Text>
-                    <Text fontSize='3xl' className='mb-4 mt-4'>I am a front-end developer with experience in UX design and user research. I build modern web apps with emphasis in usability and accessibility.
+                    <Text fontSize='3xl' className='mb-4 mt-4'>I'm a front-end developer with experience in UX design and user research. I build usable, accessible web apps.
                     </Text>
                     <Text fontSize='3xl' className='mb-8'>In my free time, you’ll find me roasting coffee and brushing my cats :)</Text>
 
