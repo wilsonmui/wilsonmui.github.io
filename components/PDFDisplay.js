@@ -13,7 +13,7 @@ export const PDFDisplay = (props) => {
 
             viewSDKClient.previewFile("pdf-div", {
                 /* Pass the embed mode option here */
-                embedMode: "IN_LINE"
+                embedMode: "IN_LINE", showDownloadPDF: true
             });
         });
     })

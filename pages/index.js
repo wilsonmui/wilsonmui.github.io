@@ -24,7 +24,7 @@ export default function Home() {
                     <Text fontSize='3xl' className='mb-8'>In my free time, you’ll find me roasting coffee and brushing my cats :)</Text>
 
                     <a className=" bg-transparent font-semibold hover:text-white py-2 px-4 border border-black rounded"
-                       href='https://github.com/wilsonmui/wilsonmui.github.io'>View this portfolio on Github</a>
+                       href='https://github.com/wilsonmui/wilsonmui.github.io'>See this portfolio's code on Github</a>
 
                 </div>
             </div>
@@ -34,7 +34,7 @@ export default function Home() {
             <Text fontSize='4xl' className='mt-16 xl:ml-8'>
                 Design + Research
             </Text>
-            <div className='m-8 place-items-center grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-4 ' >
+            <div className='m-8 place-items-center grid grid-cols-1 xl:grid-cols-2 2xl:grid-cols-3 ' >
                 <PortfolioCard url={urlPrefix + 'Thesis.pdf'} image='/card-images/thesis.png' name="Designing an Interface for ML Drawing Tools" desc="This project involves ideating a novel interface for ML drawing algorithms."/>
                 <PortfolioCard url={urlPrefix + 'Emotional-Contagion-Paper.pdf'} image='/card-images/chatbot.png' name="Emotional Contagion from Chatbots" desc="Can a chatbot's exhibited feelings influence a human's emotions? Turns out it can."/>
                 <PortfolioCard url={urlPrefix + 'Mitigating Breakdowns with Cute Behavior.pdf'} image='/card-images/relay_robot.png' name="Mitigating Breakdowns with Cute Behavior" desc="We explore the use of cute design aesthetics to improve human-robot interactions"/>
