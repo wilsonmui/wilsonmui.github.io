@@ -12,9 +12,9 @@ export const Navbar = () => {
     return (
         <>
             <nav className='flex items-center flex-wrap  p-3 border-b-[1px] border-black'>
-                <Link href='/'>
+                <a href='/'>
                     <img src='/logo_main.svg' className={styles.icon}/>
-                </Link>
+                </a>
                 <button
                     className=' inline-flex p-3 rounded lg:hidden text-black ml-auto hover:text-black outline-none'
                     onClick={handleClick}
