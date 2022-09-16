@@ -25,15 +25,15 @@ export const PortfolioCard = (props) => {
               View Project
           </button>
 
-          <Modal isOpen={isOpen} onClose={onClose} size='full'>
+          <Modal isOpen={isOpen} onClose={onClose} size='full' >
               <ModalOverlay />
-              <ModalContent className=''>
+              <ModalContent >
                   <ModalHeader>{props.name}</ModalHeader>
-                  <ModalCloseButton size='lg'/>
+                  <ModalCloseButton />
 
 
-                  <ModalBody>
-                      <div className='grid grid-cols-1 place-items-center'>
+                  <ModalBody >
+                      <div className=' grid grid-cols-1 place-items-center'>
 
                           <PDFDisplay url={props.url}/>
 

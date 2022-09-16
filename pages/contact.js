@@ -1,7 +1,10 @@
-import {Navbar} from "../components/Navbar";
 import {Heading, Text} from "@chakra-ui/react";
-import {PDFDisplay} from "../components/PDFDisplay";
+import { Link } from '@chakra-ui/react'
 import Head from "next/head";
+
+function NextLink(props) {
+    return null;
+}
 
 export default function Contact() {
     return (
@@ -13,6 +16,11 @@ export default function Contact() {
 
             <Heading className='m-14 inline-block '>Contact</Heading>
             <Text fontSize='3xl' className='m-24'>You can reach me at my email: wimui@ucsc.edu</Text>
+
+            <Text fontSize='3xl' className='mb-24 underline'>
+                <Link href='https://www.linkedin.com/in/wilson-mui-338b52148/'>LinkedIn</Link>
+
+            </Text>
 
         </div>
 
